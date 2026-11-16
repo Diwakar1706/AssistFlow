@@ -258,7 +258,7 @@ export default function App() {
     <div className="layout">
       {/* ── Left sidebar ─────────────────────────────── */}
       <aside className="sidebar">
-        <div className="brand">📚 RAGBase</div>
+        <div className="brand"> AssistFlow</div>
         <div className="side-label row">
           <span>🕘 History</span>
           <button className="mini-btn" onClick={newChat} disabled={!activeDoc} title="Start a new chat for the selected source">＋ New chat</button>
