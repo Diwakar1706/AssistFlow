@@ -1,25 +1,34 @@
-# Environment variables (contains API keys)
+# Environment variables & API keys
 .env
+*.env
+python/.env
 
-# Vector database
+# Runtime databases & caches
 db/
-
-# Python
+python/db/
 __pycache__/
 *.pyc
 *.pyo
 venv/
 .venv/
 
-# IDE
+# Runtime uploads & conversation data (do not push user data)
+python/uploads/*
+!python/uploads/.gitkeep
+python/data/*
+!python/data/.gitkeep
+python/data/conversations/*
+!python/data/conversations/.gitkeep
+
+# Dependencies
+node_modules/
+frontend/node_modules/
+
+# IDE & OS
 .vscode/
 .idea/
 *.swp
 *.swo
-
-# OS
 .DS_Store
 Thumbs.db
 
-README2.md
-PROJECT_MANUAL.md
